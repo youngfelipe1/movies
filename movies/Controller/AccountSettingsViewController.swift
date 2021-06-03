@@ -11,6 +11,7 @@ class AccountSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hola mundo!!!")
 //        view.backgroundColor = .yellow
 
         // Do any additional setup after loading the view.
