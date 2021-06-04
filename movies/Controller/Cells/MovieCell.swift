@@ -19,6 +19,5 @@ class MovieCell: UITableViewCell {
         movieTitle.text = movie.name
         movieDescription.text = movie.description
         movieDate.text = movie.date
-        
     }
 }
