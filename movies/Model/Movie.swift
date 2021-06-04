@@ -5,15 +5,15 @@
 //  Created by Felipe Young on 6/3/21.
 //
 
-import Foundation
+import UIKit
 
 struct Movie {
     let name : String
-    let image : String
+    let image : UIImage
     let date : String
     let description : String
     
-    init(name : String , image: String , date: String , description: String){
+    init(name : String , image: UIImage , date: String , description: String){
         self.name = name
         self.image = image
         self.date = date
