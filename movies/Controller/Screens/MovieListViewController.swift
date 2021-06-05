@@ -12,7 +12,9 @@ class MovieListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tipoSegmentedControl: UISegmentedControl!
     
+    var selectedMovie : Int = 0
     var movieArray : [Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.94892627, green: 0.9490850568, blue: 0.9489052892, alpha: 1)
@@ -59,6 +61,14 @@ class MovieListViewController: UIViewController {
         temp_movie.append(movie2)
         return temp_movie
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "movieDetails"{
+            let movieDetailsVC = segue.destination as! MovieDetailsViewController
+            movieDetailsVC.movie = movieArray[selectedMovie]
+        }
+    }
 
 }
 
@@ -76,6 +86,7 @@ extension MovieListViewController : UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedMovie = indexPath.row
         performSegue(withIdentifier: "movieDetails", sender: self)
     }
     

@@ -16,7 +16,7 @@ class PeopleCell: UITableViewCell {
     func setPeople(people : People){
         peopleName.text = people.name
         peopleImageView.image = people.image
-        peopleKnownMovies.text = ""
+        peopleKnownMovies.text = "holasdsafghsafghddafsgdhfjfdsafghfdasfghgfd fgdfsadghfsdagfads fsdggsfdh arsgfsd ghsfdgfdas hdfsgfsg gsdfhdgfs gdgfsghdfdgfh gfsdgdf gdfhgfdfdghdf dghhfg fhg"
         
     }
 

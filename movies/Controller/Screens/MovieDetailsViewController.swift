@@ -8,11 +8,11 @@
 import UIKit
 
 class MovieDetailsViewController: UIViewController {
-
+    @IBOutlet weak var movieImage: UIImageView!
+    var movie : Movie?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        movieImage.image = movie?.image
     }
     
 

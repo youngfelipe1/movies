@@ -11,7 +11,7 @@ class PeopleListViewController: UIViewController {
     
     @IBOutlet weak var peopleTableView: UITableView!
     var peopleArray : [People] = []
-    
+    var selectedPeople : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         peopleArray = createPeopleArray()
@@ -39,6 +39,13 @@ class PeopleListViewController: UIViewController {
         temp_array.append(person4)
         return temp_array
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "peopleDetails"{
+            let peopleDetailsVC = segue.destination as! PeopleDetalisViewController
+            peopleDetailsVC.people = peopleArray[selectedPeople]
+        }
+    }
+
 
 }
 
@@ -52,6 +59,11 @@ extension PeopleListViewController : UITableViewDataSource , UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "PeopleCell") as! PeopleCell
         cell.setPeople(people: people)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPeople = indexPath.row
+        performSegue(withIdentifier: "peopleDetails", sender: self)
     }
     
 
