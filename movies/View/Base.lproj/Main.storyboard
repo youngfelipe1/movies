@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="629" y="-992"/>
         </scene>
-        <!--Settings-->
+        <!--Account settings-->
         <scene sceneID="auM-uv-Ov8">
             <objects>
                 <viewController interfaceStyle="light" id="tLI-lO-BA3" customClass="AccountSettingsViewController" customModule="movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="ycd-TO-hXw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="cmS-IX-yJO"/>
+                    <navigationItem key="navigationItem" title="Account settings" id="cmS-IX-yJO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjj-lq-91H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
         <scene sceneID="TFf-Dv-UqH">
             <objects>
                 <navigationController id="7sB-Iv-caz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies" selectedImage="film.fill" catalog="system" id="YUq-de-CWh">
+                    <tabBarItem key="tabBarItem" title="Movies" image="film.fill" catalog="system" id="YUq-de-CWh">
                         <color key="badgeColor" red="0.37254902719999999" green="0.81176471709999998" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Tfb-9N-Zo0">
@@ -289,7 +289,7 @@
         <scene sceneID="ZTO-A6-uAf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="351-99-aCN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="People" selectedImage="person.fill" catalog="system" id="ofi-1s-qmc">
+                    <tabBarItem key="tabBarItem" title="People" image="person.fill" catalog="system" id="ofi-1s-qmc">
                         <color key="badgeColor" red="0.37254902719999999" green="0.81176471709999998" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -469,6 +469,12 @@
                                                 <state key="normal">
                                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large" renderingMode="original"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onInfoPressed:" destination="Yk9-vo-iDf" eventType="touchUpInside" id="cb0-9I-Ug6"/>
+                                                    <segue destination="plF-Px-HUh" kind="popoverPresentation" identifier="showDetails" popoverAnchorView="qZc-tY-oSI" id="wIk-Wd-Sqx">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94509804249999996" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -519,11 +525,26 @@
             </objects>
             <point key="canvasLocation" x="695.6521739130435" y="1372.7678571428571"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="mTS-eG-Pr3">
+            <objects>
+                <viewController id="plF-Px-HUh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ej4-HB-Ige">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZCG-Z9-0RR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wkq-fY-Sgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="1348"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="PA5-g7-DF3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lf3-nm-DrX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="gearshape.fill" catalog="system" id="3Jr-xv-Vir">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="3Jr-xv-Vir">
                         <color key="badgeColor" red="0.37254902719999999" green="0.81176471709999998" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -641,6 +662,7 @@
             <point key="canvasLocation" x="-1607.2463768115942" y="1415.625"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.043137259779999999" green="0.65882354970000001" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>

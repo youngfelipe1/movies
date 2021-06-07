@@ -17,7 +17,7 @@ class MovieCell: UITableViewCell {
     func setMovie(movie : Movie){
         movieImageView.image = movie.image
         movieTitle.text = movie.name
-        movieDescription.text = movie.description
-        movieDate.text = movie.date
+//        movieDescription.text = movie.description
+//        movieDate.text = movie.date
     }
 }

@@ -7,16 +7,23 @@
 
 import UIKit
 
-struct Movie {
+class Movie {
     let name : String
     let image : UIImage
-    let date : String
-    let description : String
+    let id : Int
+    var description: String
+    var budget : Int
     
-    init(name : String , image: UIImage , date: String , description: String){
+    init(name : String , image: UIImage, id: Int){
         self.name = name
         self.image = image
-        self.date = date
-        self.description = description
+        self.id = id
+        self.description = ""
+        self.budget = 0
     }
+    
+    
+    
+    
+
 }

@@ -15,6 +15,7 @@ class PeopleDetalisViewController: UIViewController {
     var people : People?
 
     override func viewDidLoad() {
+        // peliculas hardcodeadas
         super.viewDidLoad()
         peopleImage.image = people?.image
         nameLabel.text = people?.name
@@ -22,5 +23,9 @@ class PeopleDetalisViewController: UIViewController {
         print("holasss")
     }
     
-
+    @IBAction func onInfoPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
 }
+
+
