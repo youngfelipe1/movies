@@ -15,12 +15,10 @@ class PeopleDetalisViewController: UIViewController {
     var people : People?
 
     override func viewDidLoad() {
-        // peliculas hardcodeadas
         super.viewDidLoad()
-        peopleImage.image = people?.image
-        nameLabel.text = people?.name
-        peoplebiography.text = people?.biography
-        print("holasss")
+        peopleImage.image = people?.getImage()
+        nameLabel.text = people?.getName()
+        peoplebiography.text = people?.getBiography()
     }
     
     @IBAction func onInfoPressed(_ sender: UIButton) {

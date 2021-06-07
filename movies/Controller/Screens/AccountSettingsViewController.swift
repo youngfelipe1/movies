@@ -8,13 +8,12 @@
 import UIKit
 
 class AccountSettingsViewController: UIViewController {
-
+    @IBOutlet weak var profileImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        view.backgroundColor = .yellow
-
-        // Do any additional setup after loading the view.
+        profileImage.image = #imageLiteral(resourceName: "nonexistentperson")
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
     }
     
 

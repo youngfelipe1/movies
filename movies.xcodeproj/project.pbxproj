@@ -12,6 +12,7 @@
 		8E09A5A32668580E00BA1C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E09A5A12668580E00BA1C36 /* Main.storyboard */; };
 		8E09A5A52668580F00BA1C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E09A5A42668580F00BA1C36 /* Assets.xcassets */; };
 		8E09A5A82668580F00BA1C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E09A5A62668580F00BA1C36 /* LaunchScreen.storyboard */; };
+		8E5B5C16266EB7BD0035C838 /* Tmdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5B5C15266EB7BD0035C838 /* Tmdb.swift */; };
 		8E9189B8266A701600FA9F99 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9189B7266A701600FA9F99 /* MovieDetailsViewController.swift */; };
 		8E9189BA266A9B3B00FA9F99 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9189B9266A9B3B00FA9F99 /* People.swift */; };
 		8E9189BC266AA54700FA9F99 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9189BB266AA54700FA9F99 /* PeopleCell.swift */; };
@@ -33,6 +34,7 @@
 		8E09A5A42668580F00BA1C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E09A5A72668580F00BA1C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E09A5A92668580F00BA1C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E5B5C15266EB7BD0035C838 /* Tmdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tmdb.swift; sourceTree = "<group>"; };
 		8E9189B7266A701600FA9F99 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		8E9189B9266A9B3B00FA9F99 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		8E9189BB266AA54700FA9F99 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		8E09A59A2668580E00BA1C36 /* movies */ = {
 			isa = PBXGroup;
 			children = (
+				8E5B5C14266EB7AF0035C838 /* Library */,
 				8EC7B7DF26694DDE0073AA10 /* Controller */,
 				8EC7B7DE26694DD60073AA10 /* View */,
 				8EC7B7DD26694DCE0073AA10 /* Model */,
@@ -86,6 +89,14 @@
 				8E09A5A92668580F00BA1C36 /* Info.plist */,
 			);
 			path = movies;
+			sourceTree = "<group>";
+		};
+		8E5B5C14266EB7AF0035C838 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8E5B5C15266EB7BD0035C838 /* Tmdb.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		8EC7B7DD26694DCE0073AA10 /* Model */ = {
@@ -217,6 +228,7 @@
 				8E9189BA266A9B3B00FA9F99 /* People.swift in Sources */,
 				8ECDC38F266D905000101E60 /* MovieBrain.swift in Sources */,
 				8EC7B7E7266969BE0073AA10 /* Movie.swift in Sources */,
+				8E5B5C16266EB7BD0035C838 /* Tmdb.swift in Sources */,
 				8EC7B7E526694EE70073AA10 /* AccountSettingsViewController.swift in Sources */,
 				8E09A59C2668580E00BA1C36 /* AppDelegate.swift in Sources */,
 				8E09A59E2668580E00BA1C36 /* SceneDelegate.swift in Sources */,

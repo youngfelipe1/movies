@@ -9,14 +9,30 @@ import UIKit
 
 struct People{
     let name : String
-    let movies : [Movie]
     let biography : String
     let image : UIImage
+    let knownFor : String
     
-    init(name:String , movies : [Movie] , biography: String , image: UIImage){
+    init(name:String , knownFor : String , biography: String , image: UIImage){
         self.name = name
-        self.movies = movies
         self.biography = biography
         self.image = image
+        self.knownFor = knownFor
+    }
+    
+    func getName()->String{
+        return name
+    }
+    
+    func getBiography()->String{
+        return biography
+    }
+    
+    func getImage()->UIImage{
+        return image
+    }
+    
+    func getKnownFor()->String{
+        return knownFor
     }
 }

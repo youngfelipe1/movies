@@ -15,9 +15,9 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var movieDate: UILabel!
     
     func setMovie(movie : Movie){
-        movieImageView.image = movie.image
-        movieTitle.text = movie.name
-//        movieDescription.text = movie.description
-//        movieDate.text = movie.date
+        movieImageView.image = movie.getImage()
+        movieTitle.text = movie.getName()
+        movieDescription.text = movie.getDescription()
+        movieDate.text = movie.date
     }
 }

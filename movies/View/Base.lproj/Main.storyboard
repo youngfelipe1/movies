@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,10 +37,26 @@
                     <view key="view" contentMode="scaleToFill" id="hke-oA-85E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-hw-oyw">
+                                <rect key="frame" x="87" y="245" width="240" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="61A-MQ-WgM"/>
+                                    <constraint firstAttribute="height" constant="235" id="DMD-0m-yi2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ycd-TO-hXw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iy9-hw-oyw" firstAttribute="centerY" secondItem="hke-oA-85E" secondAttribute="centerY" id="kIG-hZ-FZe"/>
+                            <constraint firstItem="iy9-hw-oyw" firstAttribute="centerX" secondItem="hke-oA-85E" secondAttribute="centerX" id="mSl-fY-sEX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Account settings" id="cmS-IX-yJO"/>
+                    <connections>
+                        <outlet property="profileImage" destination="iy9-hw-oyw" id="aVk-VV-csp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjj-lq-91H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,20 +477,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZc-tY-oSI">
-                                                <rect key="frame" x="369" y="473" width="29" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal">
-                                                    <imageReference key="image" image="info.circle" catalog="system" symbolScale="large" renderingMode="original"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="onInfoPressed:" destination="Yk9-vo-iDf" eventType="touchUpInside" id="cb0-9I-Ug6"/>
-                                                    <segue destination="plF-Px-HUh" kind="popoverPresentation" identifier="showDetails" popoverAnchorView="qZc-tY-oSI" id="wIk-Wd-Sqx">
-                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                    </segue>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94509804249999996" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -524,21 +525,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Rd-e7-3Vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="695.6521739130435" y="1372.7678571428571"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mTS-eG-Pr3">
-            <objects>
-                <viewController id="plF-Px-HUh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ej4-HB-Ige">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ZCG-Z9-0RR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wkq-fY-Sgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1998" y="1348"/>
         </scene>
         <!--Settings-->
         <scene sceneID="PA5-g7-DF3">
@@ -666,7 +652,6 @@
     <resources>
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -11,16 +11,33 @@ class Movie {
     let name : String
     let image : UIImage
     let id : Int
-    var description: String
+    let description: String
+    let date : String
     var budget : Int
     
-    init(name : String , image: UIImage, id: Int){
+    
+    init(name : String , image: UIImage, id: Int, description: String, date: String){
         self.name = name
         self.image = image
         self.id = id
-        self.description = ""
+        self.description = description
         self.budget = 0
+        self.date = date
     }
+    
+    func getName()->String{
+        return name
+    }
+    
+    func getDescription()->String{
+        return description
+    }
+    
+    func getImage()->UIImage{
+        return image
+    }
+    
+    
     
     
     
