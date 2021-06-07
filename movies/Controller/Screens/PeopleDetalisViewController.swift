@@ -8,13 +8,18 @@
 import UIKit
 
 class PeopleDetalisViewController: UIViewController {
+    @IBOutlet weak var peopleImage: UIImageView!
     
+    @IBOutlet weak var peoplebiography: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     var people : People?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(people!.name)
-        // Do any additional setup after loading the view.
+        peopleImage.image = people?.image
+        nameLabel.text = people?.name
+        peoplebiography.text = people?.biography
+        print("holasss")
     }
     
 

@@ -20,6 +20,8 @@
 		8EC7B7E326694EC10073AA10 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7B7E226694EC10073AA10 /* PeopleListViewController.swift */; };
 		8EC7B7E526694EE70073AA10 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7B7E426694EE70073AA10 /* AccountSettingsViewController.swift */; };
 		8EC7B7E7266969BE0073AA10 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7B7E6266969BE0073AA10 /* Movie.swift */; };
+		8ECDC38F266D905000101E60 /* MovieBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDC38E266D905000101E60 /* MovieBrain.swift */; };
+		8ECDC391266DAB6F00101E60 /* PeopleBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDC390266DAB6F00101E60 /* PeopleBrain.swift */; };
 		8EEB087D2669859D00A8E01F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB087C2669859D00A8E01F /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		8EC7B7E226694EC10073AA10 /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		8EC7B7E426694EE70073AA10 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
 		8EC7B7E6266969BE0073AA10 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8ECDC38E266D905000101E60 /* MovieBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBrain.swift; sourceTree = "<group>"; };
+		8ECDC390266DAB6F00101E60 /* PeopleBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleBrain.swift; sourceTree = "<group>"; };
 		8EEB087C2669859D00A8E01F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,8 @@
 			children = (
 				8EC7B7E6266969BE0073AA10 /* Movie.swift */,
 				8E9189B9266A9B3B00FA9F99 /* People.swift */,
+				8ECDC38E266D905000101E60 /* MovieBrain.swift */,
+				8ECDC390266DAB6F00101E60 /* PeopleBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,10 +210,12 @@
 				8EA21B22266BFFD100F4F787 /* PeopleDetalisViewController.swift in Sources */,
 				8E9189B8266A701600FA9F99 /* MovieDetailsViewController.swift in Sources */,
 				8EEB087D2669859D00A8E01F /* MovieCell.swift in Sources */,
+				8ECDC391266DAB6F00101E60 /* PeopleBrain.swift in Sources */,
 				8E9189BC266AA54700FA9F99 /* PeopleCell.swift in Sources */,
 				8EC7B7E126694DFF0073AA10 /* MovieListViewController.swift in Sources */,
 				8EC7B7E326694EC10073AA10 /* PeopleListViewController.swift in Sources */,
 				8E9189BA266A9B3B00FA9F99 /* People.swift in Sources */,
+				8ECDC38F266D905000101E60 /* MovieBrain.swift in Sources */,
 				8EC7B7E7266969BE0073AA10 /* Movie.swift in Sources */,
 				8EC7B7E526694EE70073AA10 /* AccountSettingsViewController.swift in Sources */,
 				8E09A59C2668580E00BA1C36 /* AppDelegate.swift in Sources */,
